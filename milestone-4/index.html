@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="heading">Resume Form</h1>
+    <form id="form">
+        <h2 class="head">Personal Details</h2>
+        <hr style="margin-bottom: 20px;">
+        <div class="form-group">
+            <label class="label" for="name">Name:</label>
+            <input class="input" type="text" id="myName" >
+        </div>
+
+        <div class="form-group">
+            <label class="label" for="desig">Designation:</label>
+            <input class="input" type="text" id="desig" >
+        </div>
+
+        <div class="form-group">
+            <label class="label" for="Phone">Phone:</label>
+            <input class="input" type="tel" id="phone" >
+        </div>
+
+        <div class="form-group">
+            <label class="label" for="email">Email:</label>
+            <input class="input" type="email" id="email" >
+        </div>
+
+        <div class="form-group">
+            <label class="label" for="address">Address:</label>
+            <input class="input" type="text" id="address" >
+        </div>
+
+        <div class="form-group">
+            <label class="label" for="pic">Profile Picture</label>
+            <input class="input" type="file" id="pic" >
+        </div>
+
+        <h2 class="head">Education</h2>
+        <hr style="margin-bottom: 20px;">
+
+
+        <div class="form-group">
+            <label class="label" for="pass">Passing Year:</label>
+            <input class="input" type="number" id="pass" >
+        </div>
+
+
+        <div class="form-group">
+            <label class="label" for="deg">Degree:</label>
+            <input class="input" type="text" id="deg" >
+        </div>
+
+        <div class="form-group">
+            <label class="label" for="uni">Institute:</label>
+            <input class="input" type="text" id="uni" >
+        </div>
+
+
+        <h2 class="head">Skills</h2>
+        <hr style="margin-bottom: 20px;">
+
+        <div class="form-group">
+            <label class="label" for="skill">Skills:</label>
+            <input class="input mb-20" type="text" id="skill1" >
+            <input class="input mb-20" type="text" id="skill2" >
+            <input class="input mb-20" type="text" id="skill3" >
+
+
+        </div>
+
+        <h2 class="head">Language</h2>
+        <hr style="margin-bottom: 20px;">
+        <div class="form-group">
+            <label class="label" for="lang">Language-1:</label>
+            <input class="input mb-20" type="text" id="lang1" >
+            <label class="label" for="lang">Language-2:</label>
+            <input class="input" type="text" id="lang2" >
+
+        </div>
+
+        <h2 class="head">Experience</h2>
+        <hr style="margin-bottom: 20px;">
+        <div class="form-group">
+            <label class="label" for="styear">Start year:</label>
+            <input class="input mb-20" type="number" id="styear" >
+
+            <label class="label" for="endyear">end year:</label>
+            <input class="input mb-20" type="number" id="endyear" >
+
+            <label class="label" for="company">company</label>
+            <input class="input mb-20" type="text" id="company" >
+
+            <label class="label" for="comlocation">Company Location:</label>
+            <input class="input mb-20" type="text" id="comlocation" >
+
+
+            <label class="label" for="jobTitle">Job title:</label>
+            <input class="input mb-20" type="text" id="jobTitle" >
+
+
+            <label class="label" for="achiev">Achievements:</label>
+            <input class="input mb-20" type="text" id="achiev1" >
+            <input class="input mb-20" type="text" id="achiev2" >
+            <input class="input mb-20" type="text" id="achiev3" >
+        </div>
+        <br>
+        <hr style="margin-bottom: 20px;">
+        <div class="btnDiv"><input id="submitBtn" class="submit" type="submit"></div>
+
+
+    </form>
+
+
+    
+</body>
+<script src="script.js"></script>
+
+
+</html>
