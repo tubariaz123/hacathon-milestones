@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.resume-Container{
+    width: 70%;
+    
+    border: 2px solid black;
+
+
+}
+
+header{
+    width: 100%;
+    height: 110px;
+    background:linear-gradient( rgb(43, 214, 214),rgba(33, 189, 189, 0.5));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    
+    
+}
+.white{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    
+}
+
+
+header img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+  
+    
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    
+}
+
+.content aside{
+    width: 30%;
+    background-color: rgba(216, 220, 221, 0.479);
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+.contact,
+.education,
+.skills,
+.language{
+    margin-bottom: 30px;
+
+}
+.contact h2{
+    padding-top: 15px;
+    line-height: 20px;
+}
+
+.contact h2,
+.education h2,
+.skills h2,
+.language h2,
+.experience h2,
+.reference h2{
+border-bottom: 2px solid  rgb(43, 214, 214) ;
+margin-bottom: 20px;
+padding-bottom: 3px;
+color: rgb(43, 214, 214);
+
+
+
+}
+.education{
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+.skills{
+    line-height: 20px;
+    list-style-type: circle;
+    
+}
+.skills h2{
+    line-height: 20px;
+}
+
+.skills ul{
+    list-style-type: circle strong black;
+    margin-left: 18px;
+}
+.main-content{
+    padding-left: 50px;
+    width: 70%;
+    background-color:white;
+    
+}
+
+.experience h2{
+    line-height: 20px;
+    padding-top: 15px;
+}
+
+.experience-items{
+    margin-bottom: 48px;
+}
+
+.experience-items p{
+    margin-bottom: 5px; 
+}
+
+.experience-items ul{
+    margin-left: 18px;
+    margin-top: 15px;
+}
+.btnDiv{
+    width: 70%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    margin-top: 20px;
+}
+.btn{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: white;
+    background: rgb(43, 214, 214);
+    cursor: pointer;
+
+
+  &:hover{
+    background: rgb(26, 156, 156);
+    
+  }
+  &:active{
+    transform: scale(0.95);
+  }
+    
+}
+
+.hide{
+    display: none;
+}
+
+@media print{
+    .btnDiv{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:786px){
+    .content{
+        flex-direction: column;
+    }
+   aside, .main-content{
+    width: 100%;
+   }
+
+}
